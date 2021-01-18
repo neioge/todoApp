@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RailsとReactを使って作成したTodo管理アプリです。
+Ajaxやコンポーネントなどの勉強を目的として作成しました。
 
-Things you may want to cover:
+* Ruby version : 2.6.3
 
-* Ruby version
+* Rails version : 6.0.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Database : sqlite3 （開発・テスト） postgresql　（本番）
