@@ -1,0 +1,7 @@
+<%= react_component('Note', { 
+  title: 'You can let others do your todo', 
+  user_todos_url: api_users_user_todo_list_url(:json), 
+  switch_user_url: api_todos_switch_user_url(:json),
+  secure_token: form_authenticity_token
+}) %>
+

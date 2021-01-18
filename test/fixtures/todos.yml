@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  work: MyText
+  due_date: 2021-01-18 12:34:42
+  user: one
+
+two:
+  title: MyString
+  work: MyText
+  due_date: 2021-01-18 12:34:42
+  user: two

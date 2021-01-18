@@ -1,0 +1,100 @@
+// Place all the styles related to the Note controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// タイトル要素
+div#NoteTitle {
+    font-weight: bold;
+    font-family: Monospace;
+    font-size: 24px;
+    border-collapse: collapse;
+  }
+  
+  // ノート全体
+  // "display: flex"でflexレイアウトを指定しています。
+  // 左上からピチっと並べてもらいます。
+  div#Note {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  // ユーザ毎の箱
+  div.UserBox {
+    margin: 1px;
+    width: 45vw;
+    height: 45vh;
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  
+  // ユーザ名を表示する箱
+  div.UserName {
+    width: 100%;
+    height: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Monospace;
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 1px solid;
+  }
+  
+  // 付箋表示エリア
+  // ここもflexレイアウト
+  div.TodoArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  // 付箋本体
+  // 影をつけてそれっぽく
+  div.Todo {
+    display: grid;
+    padding: 1px;
+    margin: 5px;
+    width: 100px;
+    height: 80px;
+    font-size: 10px;
+    font-family: monospace;
+    text-align: left;
+    border: 1px #FFFF00 solid;
+    background-color: #FFFF00;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  // タスクのタイトル
+  div.TodoTitle {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: monospace;
+    border-bottom: #FF0000 1px solid;
+  
+  }
+  
+  // タスクの本文
+  div.TodoDescription {
+    grid-row: 2 / 6;
+    grid-column: 1 / 3;
+    font-size: 10px;
+    font-family: monospace;
+  }
+  
+  // タスクの期日
+  div TodoDueDate {
+    grid-row: 7 / 8;
+    grid-column: 1 / 3;
+    font-size:8px;
+    font-family: monospace;
+  }  
